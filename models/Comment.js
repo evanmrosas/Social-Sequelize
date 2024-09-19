@@ -4,7 +4,8 @@ class Comment extends Model{}
 
 Comment.init({
     body: DataTypes.STRING,
-    createdAt: DataTypes.STRING
+    createdAt: DataTypes.STRING,
+    postId: DataTypes.INTEGER
 }, {
     sequelize: db,
     modelName: 'Comment'
